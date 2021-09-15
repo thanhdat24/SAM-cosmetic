@@ -6,9 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAM cosmetic</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- FONT ROBOTO  -->
+
+    <link href="https://fonts.googleapis.com/css2?
+    family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="./styles/owl.theme.default.min.css">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- STYLE CSS  -->
     <link rel="stylesheet" href="./styles/index.css">
@@ -16,7 +28,586 @@
 </head>
 
 <body>
-    <h1>SAM</h1>
+    <!-- HEADER  -->
+    <header id="header" class="header">
+        <div class="header__wrapper">
+            <!-- header top -->
+            <div class="header__top">
+                <div class="navbar-wrapper container-wrapper d-flex align-items-center">
+                    <div class="container navbar">
+                        <div class="navbar__left">
+                            <div class="navbar__social-icons">
+                                <a> <i class="fab fa-facebook-f"></i></a>
+                                <a> <i class="fab fa-instagram"></i></a>
+                                <a> <i class="fab fa-twitter"></i></a>
+                                <a> <i class="fab fa-google-plus-g"></i></a>
+                            </div>
+                        </div>
+                        <div class="navbar__center"></div>
+                        <div class="navbar__right">
+                            <ul class="nav top-bar-nav nav-right">
+                                <li class="nav-item ">
+                                    <p class="nav-link ">
+                                        <strong class="text-dark">Hotline:</strong>
+                                        <a class="phone" href="tel:0123456789">0123 456 789</a>
+                                    </p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="nav-link"> <a class="register">Đăng ký</a></p>
+                                </li>
+                                <li class="nav-item ">
+                                    <p class="nav-link"> <a class="login"> Đăng nhập </a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header main -->
+            <div class="container-wrapper header__main">
+                <div class="container">
+                    <div class="row d-flex align-items-center mt-1">
+                        <div id="logo" class="col-4 ">
+                            <div class="header__left">
+                                <form class="header__form--search ">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control header__form--input"
+                                            placeholder="Tìm kiếm…" autocomplete="off">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text header__form--text" id="basic-addon2"><i
+                                                    class="fa fa-search"></i></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Logo -->
+                        <div id="logo" class="col-4 ">
+                            <!-- Header logo -->
+                            <div class="header__logo">
+                                <a href="http://mauweb.monamedia.net/beautygarden/" title="beautygarden" rel="home">
+                                    <img width="320" height="81"
+                                        src="http://mauweb.monamedia.net/beautygarden/wp-content/uploads/2018/08/logomoi-compressor.png"
+                                        class="header__img " alt="beautygarden" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 ">
+                            <div class="header__right header__cart">
+                                <li class="header__cart--item">
+                                    <button class="header__cart--button">
+                                        <span class="header__cart--title">
+                                            Giỏ hàng / <span class="header__cart--price">
+                                                <span class="header__cart--price-amount">
+                                                    0&nbsp; <span class="header__cart--price-symbol">₫</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </button>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header bottom -->
+            <div class="header__bottom">
+                <div class="container">
+                    <nav class="topnavBar">
+                        <div class="dropdownBackground">
+                            <span class="arrow"></span>
+                        </div>
+                        <ul class="nav-bar header__nav">
+                            <li>
+                                <a class="header__nav--link" href="#">Trang Điểm Mặt <i
+                                        class="fa fa-angle-down"></i></a>
+                                <div class="dropdown products">
+                                    <ul class="cols-wrapper">
+                                        <li class="cols-li">
+                                            <ul class="list-container">
+                                                <a href="#" class="col-title">Trang Điểm Mặt</a>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Cushion
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Kem BB – CC – DD
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Kem Che Khuyết Điểm
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Kem Nền
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Phấn Má Hồng
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Primer – Kem Lót
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Tạo Khối Highlighter
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Xịt Khoáng Nền
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="cols-li">
+                                            <ul class="list-container">
+                                                <a href="#" class="col-title">Trang Điểm Mắt</a>
+                                                <li class="list-item">
+
+                                                    <a href="#" class="nav-link-dropdown">Eye Primer – Kem Lót Mắt
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+
+                                                    <a href="#" class="nav-link-dropdown">Eyeliner – Kẻ Mắt
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Kẻ Mày
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Mascara
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Phấn Mắt
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="cols-li">
+                                            <ul class="list-container">
+                                                <a href="#" class="col-title">Trang Điểm Môi</a>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Lót môi
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Son dưỡng
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Son hight-end
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Son môi
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="header__nav--link" href="#">Chăm Sóc Da <i class="fa fa-angle-down"></i></a>
+                                <div class="dropdown products">
+                                    <ul class="cols-wrapper">
+                                        <li class="cols-li">
+                                            <ul class="list-container">
+                                                <a href="#" class="col-title">Trang Điểm Mặt</a>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Cushion
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Kem BB – CC – DD
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Kem Che Khuyết Điểm
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Kem Nền
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Phấn Má Hồng
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Primer – Kem Lót
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Tạo Khối Highlighter
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Xịt Khoáng Nền
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="cols-li">
+                                            <ul class="list-container">
+                                                <a href="#" class="col-title">Trang Điểm Mắt</a>
+                                                <li class="list-item">
+
+                                                    <a href="#" class="nav-link-dropdown">Eye Primer – Kem Lót Mắt
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+
+                                                    <a href="#" class="nav-link-dropdown">Eyeliner – Kẻ Mắt
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Kẻ Mày
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Mascara
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Phấn Mắt
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="cols-li">
+                                            <ul class="list-container">
+                                                <a href="#" class="col-title">Trang Điểm Môi</a>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Lót môi
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Son dưỡng
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Son hight-end
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Son môi
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="header__nav--link" href="#">Chăm Sóc Toàn Thân <i
+                                        class="fa fa-angle-down"></i></a>
+                                <div class="dropdown products">
+                                    <ul class="cols-wrapper">
+                                        <li class="cols-li">
+                                            <ul class="list-container">
+                                                <a href="#" class="col-title">Trang Điểm Mặt</a>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Cushion
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Kem BB – CC – DD
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Kem Che Khuyết Điểm
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Kem Nền
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Phấn Má Hồng
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Primer – Kem Lót
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Tạo Khối Highlighter
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Xịt Khoáng Nền
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="cols-li">
+                                            <ul class="list-container">
+                                                <a href="#" class="col-title">Trang Điểm Mắt</a>
+                                                <li class="list-item">
+
+                                                    <a href="#" class="nav-link-dropdown">Eye Primer – Kem Lót Mắt
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+
+                                                    <a href="#" class="nav-link-dropdown">Eyeliner – Kẻ Mắt
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Kẻ Mày
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Mascara
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Phấn Mắt
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="cols-li">
+                                            <ul class="list-container">
+                                                <a href="#" class="col-title">Trang Điểm Môi</a>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Lót môi
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Son dưỡng
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Son hight-end
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Son môi
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="header__nav--link" href="#">Chăm Sóc Tóc <i class="fa fa-angle-down"></i></a>
+                                <div class="dropdown products">
+                                    <ul class="cols-wrapper">
+                                        <li class="cols-li">
+                                            <ul class="list-container">
+                                                <a href="#" class="col-title">Trang Điểm Mặt</a>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Cushion
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Kem BB – CC – DD
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Kem Che Khuyết Điểm
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Kem Nền
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Phấn Má Hồng
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Primer – Kem Lót
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Tạo Khối Highlighter
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Xịt Khoáng Nền
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="cols-li">
+                                            <ul class="list-container">
+                                                <a href="#" class="col-title">Trang Điểm Mắt</a>
+                                                <li class="list-item">
+
+                                                    <a href="#" class="nav-link-dropdown">Eye Primer – Kem Lót Mắt
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+
+                                                    <a href="#" class="nav-link-dropdown">Eyeliner – Kẻ Mắt
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Kẻ Mày
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Mascara
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Phấn Mắt
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="cols-li">
+                                            <ul class="list-container">
+                                                <a href="#" class="col-title">Trang Điểm Môi</a>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Lót môi
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Son dưỡng
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Son hight-end
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Son môi
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="header__nav--link" href="#">Nước Hoa <i class="fa fa-angle-down"></i></a>
+                                <div class="dropdown products">
+                                    <ul class="cols-wrapper">
+                                        <li class="cols-li">
+                                            <ul class="list-container">
+                                                <a href="#" class="col-title">Trang Điểm Mặt</a>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Cushion
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Kem BB – CC – DD
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Kem Che Khuyết Điểm
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Kem Nền
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Phấn Má Hồng
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Primer – Kem Lót
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Tạo Khối Highlighter
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Xịt Khoáng Nền
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="cols-li">
+                                            <ul class="list-container">
+                                                <a href="#" class="col-title">Trang Điểm Mắt</a>
+                                                <li class="list-item">
+
+                                                    <a href="#" class="nav-link-dropdown">Eye Primer – Kem Lót Mắt
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+
+                                                    <a href="#" class="nav-link-dropdown">Eyeliner – Kẻ Mắt
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Kẻ Mày
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Mascara
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Phấn Mắt
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="cols-li">
+                                            <ul class="list-container">
+                                                <a href="#" class="col-title">Trang Điểm Môi</a>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Lót môi
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link-dropdown">Son dưỡng
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Son hight-end
+                                                    </a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="nav-link-dropdown" href="#">Son môi
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Banner  -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <!-- OWL JS -->
+
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- APP JS -->
+    <script src="./js/app.js"></script>
+    <script type="text/javascript">
+        $('.carousel').carousel({
+            interval: 300000,
+        })
+    </script>
+
 </body>
 
 </html>
