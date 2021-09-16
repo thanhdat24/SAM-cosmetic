@@ -44,3 +44,4 @@ submenutrigger.forEach((trigger) =>
 submenutrigger.forEach((trigger) =>
   trigger.addEventListener("mouseleave", deactiveSub)
 );
+
