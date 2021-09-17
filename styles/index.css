@@ -442,12 +442,12 @@ a.button {
   font-weight: bold;
 }
 
-.card {
+.card-header {
   height: 320px;
   transition: all 0.3s;
 }
 
-.card:hover {
+.card-header:hover {
   border: 1px solid #199427;
   cursor: pointer;
 }
