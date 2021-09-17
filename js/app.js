@@ -45,3 +45,46 @@ submenutrigger.forEach((trigger) =>
   trigger.addEventListener("mouseleave", deactiveSub)
 );
 
+// MOBILE
+$(document).ready(function () {
+  // Scroll window
+  $(document).scroll(function () {
+    const currentPos = $(this).scrollTop();
+    $(".header__bottom").toggleClass("active", currentPos > 250);
+  });
+});
+
+// $(document).on("click", ".dropdown-mini", function (e) {
+//   e.preventDefault();
+
+//   $(".menu-level2").removeClass("active");
+//   $(this).parents("a").siblings(".menu-level2").toggleClass("active");
+// });
+// toggle main-menu-mobile
+$(document).on("click", ".bar .fa-bars", function (e) {
+  e.preventDefault();
+  $(".menu-mobile-overlay").addClass("active");
+});
+
+// cancel main-menu0mobile
+$(document).click(function (e) {
+  const target = e.target;
+
+  // cancel main-menu0mobile
+  if (
+    target.classList.contains("close") ||
+    target.classList.contains("menu-mobile-overlay")
+  ) {
+    $(".menu-mobile-overlay").removeClass("active");
+  }
+});
+// Main menu mobile;
+$(".nav-level-1 li").on("click", function () {
+  $(".nav-level-1 li").removeClass("active");
+  $(this).addClass("active");
+});
+
+$(".makeup__nav-tab li").on("click", function () {
+  $(".makeup__nav-tab li").removeClass("active");
+  $(this).addClass("active");
+});

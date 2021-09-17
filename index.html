@@ -21,6 +21,7 @@
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
@@ -40,12 +41,12 @@
             <div class="header__top">
                 <div class="navbar-wrapper container-wrapper d-flex align-items-center">
                     <div class="container navbar">
-                        <div class="navbar__left">
+                        <div class="navbar__left social-icons">
                             <div class="navbar__social-icons">
-                                <a> <i class="fab fa-facebook-f"></i></a>
-                                <a> <i class="fab fa-instagram"></i></a>
-                                <a> <i class="fab fa-twitter"></i></a>
-                                <a> <i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"> <i class="fab fa-instagram"></i></a>
+                                <a href="#"> <i class="fab fa-twitter"></i></a>
+                                <a href="#"> <i class="fab fa-google-plus-g"></i></a>
                             </div>
                         </div>
                         <div class="navbar__center"></div>
@@ -70,15 +71,22 @@
             </div>
             <!-- header main -->
             <div class="container-wrapper header__main">
-                <div class="container">
+                <div class="container ">
                     <div class="row d-flex align-items-center mt-1">
-                        <div id="logo" class="col-4 ">
+                        <div class="col-lg-4 col-md-3 col-2">
+                            <!-- NAV MOBILE  -->
+                            <div class="bar-mobile">
+                                <div class="bar">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                            <!-- NAV MOBILE  -->
                             <div class="header__left">
-                                <form class="header__form--search ">
+                                <form class="header__form--search">
                                     <div class="input-group">
                                         <input type="text" class="form-control header__form--input"
                                             placeholder="Tìm kiếm…" autocomplete="off">
-                                        <div class="input-group-append">
+                                        <div class="input-group-append header__form--submit">
                                             <span class="input-group-text header__form--text" id="basic-addon2"><i
                                                     class="fa fa-search"></i></span>
                                         </div>
@@ -87,18 +95,18 @@
                             </div>
                         </div>
                         <!-- Logo -->
-                        <div id="logo" class="col-4 ">
+                        <div id="logo" class="col-lg-4 col-md-6 col-8">
                             <!-- Header logo -->
                             <div class="header__logo">
                                 <a href="http://mauweb.monamedia.net/beautygarden/" title="beautygarden" rel="home">
-                                    <img width="320" height="81"
+                                    <img width="320" max-height="81"
                                         src="http://mauweb.monamedia.net/beautygarden/wp-content/uploads/2018/08/logomoi-compressor.png"
                                         class="header__img " alt="beautygarden" />
                                 </a>
                             </div>
                         </div>
-                        <div class="col-4 ">
-                            <div class="header__right header__cart">
+                        <div class="col-lg-4 col-md-3 col-2">
+                            <div class="header__right header__cart hide">
                                 <li class="header__cart--item">
                                     <button class="header__cart--button">
                                         <span class="header__cart--title">
@@ -112,10 +120,139 @@
                                     </button>
                                 </li>
                             </div>
+                            <!-- Mobile Cart -->
+                            <div class="header__right header__cart show">
+                                <li class="header__cart--item">
+                                    <button class="header__cart--button">
+                                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Menu mobile overlay  -->
+            <section class="menu-mobile-overlay">
+                <div class="content-menu">
+                    <div class="close">
+                        ×
+                    </div>
+                    <div class="search">
+                        <input type="" placeholder="Search Product..." />
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
+                    <nav class="main-menu-mobile">
+                        <ul class="nav-level-1">
+                            <li class="menu-item">
+                                <a class="d-flex align-item-center justify-content-between" href="#">Trang Điểm<i
+                                        data-toggle="collapse" href="#level1" role="button" aria-expanded="false"
+                                        aria-controls="level1" class="dropdown-mini bi bi-chevron-down"></i></a>
+                                <ul class="collapse menu-level-2" id="level1">
+                                    <li><a class=" nav-link" href="#">Trang Điểm Mặt </a>
+                                        <ul class="nav-level-2">
+                                            <li><a href="#">Cushion</a></li>
+                                            <li><a href="#">Kem BB - CC - DD</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link" href="#">Trang Điểm Mặt </a>
+                                        <ul class="nav-level-2">
+                                            <li><a href="#">Cushion</a></li>
+                                            <li><a href="#">Kem BB - CC - DD</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a class="d-flex align-item-center justify-content-between" href="#">Chăm Sóc Da<i
+                                        data-toggle="collapse" href="#level2" role="button" aria-expanded="false"
+                                        aria-controls="level2" class="dropdown-mini bi bi-chevron-down"></i></a>
+                                <ul class="collapse menu-level-2" id="level2">
+                                    <li><a class="nav-link" href="#">Trang Điểm Mặt </a>
+                                        <ul class="nav-level-2">
+                                            <li><a href="#">Cushion</a></li>
+                                            <li><a href="#">Kem BB - CC - DD</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link" href="#">Trang Điểm Mặt </a>
+                                        <ul class="nav-level-2">
+                                            <li><a href="#">Cushion</a></li>
+                                            <li><a href="#">Kem BB - CC - DD</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a class="d-flex align-item-center justify-content-between" href="#">Chăm Sóc Toàn
+                                    Thân<i data-toggle="collapse" href="#level3" role="button" aria-expanded="false"
+                                        aria-controls="level3" class="dropdown-mini bi bi-chevron-down"></i></a>
+                                <ul class="collapse menu-level-2" id="level3">
+                                    <li><a class="nav-link" href="#">Trang Điểm Mặt </a>
+                                        <ul class="nav-level-2">
+                                            <li><a href="#">Cushion</a></li>
+                                            <li><a href="#">Kem BB - CC - DD</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link" href="#">Trang Điểm Mặt </a>
+                                        <ul class="nav-level-2">
+                                            <li><a href="#">Cushion</a></li>
+                                            <li><a href="#">Kem BB - CC - DD</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a class="d-flex align-item-center justify-content-between" href="#">Chăm Sóc Tóc<i
+                                        data-toggle="collapse" href="#level4" role="button" aria-expanded="false"
+                                        aria-controls="level4" class="dropdown-mini bi bi-chevron-down"></i></a>
+                                <ul class="collapse menu-level-2" id="level4">
+                                    <li><a class="nav-link" href="#">Trang Điểm Mặt </a>
+                                        <ul class="nav-level-2">
+                                            <li><a href="#">Cushion</a></li>
+                                            <li><a href="#">Kem BB - CC - DD</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link" href="#">Trang Điểm Mặt </a>
+                                        <ul class="nav-level-2">
+                                            <li><a href="#">Cushion</a></li>
+                                            <li><a href="#">Kem BB - CC - DD</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a class="d-flex align-item-center justify-content-between" href="#">Nước Hoa<i
+                                        data-toggle="collapse" href="#level5" role="button" aria-expanded="false"
+                                        aria-controls="level5" class="dropdown-mini bi bi-chevron-down"></i></a>
+                                <ul class="collapse menu-level-2" id="level5">
+                                    <li><a class="nav-link" href="#">Trang Điểm Mặt </a>
+                                        <ul class="nav-level-2">
+                                            <li><a href="#">Cushion</a></li>
+                                            <li><a href="#">Kem BB - CC - DD</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link" href="#">Trang Điểm Mặt </a>
+                                        <ul class="nav-level-2">
+                                            <li><a href="#">Cushion</a></li>
+                                            <li><a href="#">Kem BB - CC - DD</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a class="d-flex align-item-center justify-content-between" href="#">Đăng Nhập</a>
+                            </li>
+                            <li class="menu-item">
+                                <div style="font-size: 1.27rem; " class="nav-social-icons my-3">
+                                    <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"> <i class="fab fa-instagram"></i></a>
+                                    <a href="#"> <i class="fab fa-twitter"></i></a>
+                                    <a href="#"> <i class="fab fa-google-plus-g"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
             <!-- header bottom -->
             <div class="header__bottom">
                 <div class="container">
@@ -769,8 +906,8 @@
                     <div class="makeup__inner">
                         <ul class="nav nav-tabs makeup__nav-tab" id="myTab" role="tablist">
                             <h4 class="makeup__title">Trang điểm</h4>
-                            <li class="nav-item makeup__item">
-                                <a class="nav-link active makeup__link" id="face-tab" data-toggle="tab" href="#face" role="tab"
+                            <li class="nav-item makeup__item active">
+                                <a class="nav-link makeup__link" id="face-tab" data-toggle="tab" href="#face" role="tab"
                                     aria-controls="home" aria-selected="true">
                                     Trang điểm mặt
 
@@ -1059,6 +1196,12 @@
     <!-- OWL JS -->
     <script src="./js/owl.carousel.min.js"></script>
     <script>
+        $('.carousel').carousel({
+
+            interval: 2000
+        })
+    </script>
+    <script>
         $('.product__carousel').owlCarousel({
             loop: true,
             margin: 10,
@@ -1066,13 +1209,21 @@
             dots: false,
             responsive: {
                 0: {
-                    items: 1
+                    items: 2,
+                    nav: false,
                 },
                 600: {
-                    items: 3
+                    item: 3,
+
+                    nav: false,
                 },
-                1000: {
-                    items: 5
+                976: {
+                    items: 4,
+                    nav: false,
+                },
+                1400: {
+                    items: 5,
+
                 }
             }
         }),
@@ -1083,13 +1234,16 @@
                 dots: false,
                 responsive: {
                     0: {
-                        items: 1
+                        items: 1,
+                        nav: false,
                     },
                     600: {
-                        items: 3
+                        items: 3,
+                        nav: false,
                     },
                     1000: {
-                        items: 5
+                        items: 5,
+
                     }
                 }
             })
