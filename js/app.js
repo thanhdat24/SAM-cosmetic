@@ -1,4 +1,6 @@
-const submenutrigger = document.querySelectorAll(".nav-bar > li");
+const submenutrigger = document.querySelectorAll(
+  ".nav-bar .header__nav--item"
+);
 const dropBackground = document.querySelector(".dropdownBackground");
 const nav = document.querySelector(".topnavBar");
 /*activate submenu*/
